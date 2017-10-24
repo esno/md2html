@@ -1,0 +1,37 @@
+#!/usr/bin/env lua
+
+local os = require('os')
+local lfs = require('lfs')
+local markdown = require('discount')
+
+local md2html = {
+  srcFiles = {}
+}
+
+function md2html.scanSource(self, src)
+  for fileName in lfs.dir(src) do
+    if fileName ~= '.' and fileName ~= '..' then
+      absolutePath = src .. '/' .. fileName
+      if lfs.attributes(absolutePath, 'mode') == 'directory' then
+        -- merge lua tables
+        self:scanSource(absolutePath)
+      else
+        table.insert(self.srcFiles, {  })
+      end
+    end
+  end
+end
+
+function md2html.run(self)
+  if not arg[1] or not arg[2] then
+    print('USAGE: ' .. arg[0] .. ' <src> <dest>')
+    os.exit(1)
+  end
+
+  local src = arg[1]
+  local dest = arg[2]
+
+  md2html.files = md2html:scanSource(src)
+end
+
+md2html:run()
