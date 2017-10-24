@@ -107,6 +107,11 @@ div.mdFile table th {
   text-align: left;
 }
 
+div.mdFile table td {
+  background: #dcdccc;
+  color: #2c2c2c;
+}
+
 div.mdFileName {
   margin: 25px 0 0;
   color: #0395de;
