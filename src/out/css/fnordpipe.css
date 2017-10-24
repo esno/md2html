@@ -1,0 +1,125 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #2c2c2c;
+  color: #dcdccc;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 50px 0 25px 0;
+  color: #dcdccc;
+  text-align: center;
+}
+
+h1 span {
+  color: #0395de;
+}
+
+ul {
+  margin: 0 0 100px 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  padding: 0 15px;
+  display: inline;
+}
+
+a {
+  color: #0395de;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.mdFile {
+  margin: 25px 10% 0;
+  padding: 5px;
+}
+
+div.mdFile h1 {
+  margin: 0;
+  padding: 15px 0;
+  color: #0395de;
+  text-align: left;
+}
+
+div.mdFile pre {
+  margin: 0;
+  padding: 10px;
+  border-left: 3px solid #0395de;
+  background: #dcdccc;
+  color: #2c2c2c;
+  overflow: auto;
+}
+
+div.mdFile pre code {
+  padding: 0;
+  background: none;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+div.mdFile code {
+  padding: 2px;
+  background: #0395de;
+  color: #2c2c2c;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+div.mdFile blockquote {
+  margin-left: 25px;
+  padding: 0;
+  font-style: italic;
+  color: #0395de;
+}
+
+div.mdFile blockquote p {
+  margin: 3px;
+  padding: 0;
+}
+
+div.mdFile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+div.mdFile table {
+  border-collapse: collapse;
+}
+
+div.mdFile table, div.mdFile table th, div.mdFile table td {
+  padding: 5px;
+  border: 2px solid #0395de;
+}
+
+div.mdFile table th {
+  background: #0395de;
+  color: #2c2c2c;
+  text-align: left;
+}
+
+div.mdFileName {
+  margin: 25px 0 0;
+  color: #0395de;
+  text-align: right;
+}
+
+div#meta {
+  padding: 5px;
+  text-align: center;
+}
+
+div#meta hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(3, 149, 222, 0), rgba(3, 149, 222, 0.75), rgba(3, 149, 222, 0));
+}
