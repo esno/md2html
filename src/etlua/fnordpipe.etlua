@@ -7,11 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
   </head>
   <body>
-    <h1>fnordpipe<span>.org</span></h1>
-    <ul>
-      <li>github/<a href="https://github.com/fnordpipe">fnordpipe</a></li>
-      <li>github/<a href="https://github.com/esno">esno</a></li>
-    </ul>
+    <div class="header">
+      <h1>fnordpipe<span>.org</span></h1>
+      <ul>
+        <li>github/<a href="https://github.com/fnordpipe">fnordpipe</a></li>
+        <li>github/<a href="https://github.com/esno">esno</a></li>
+      </ul>
+    </div>
     <% for _, md in pairs(items) do %>
       <div class="mdFile">
         <%- md.content() %>
